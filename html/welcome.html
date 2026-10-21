@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZOJA – butik veshjesh për femra. Dizajne elegante dhe cilësi e lartë për çdo moment.">
+    <title>ZOJA - For every woman, for every moment.</title>
+
+    <!-- Fontet e Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/logo/logo.jpg" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/welcome.css">
+</head>
+<body class="welcome-page">
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Navigimi -->
+    <nav class="navbar" aria-label="Navigimi kryesor">
+        <a href="#home" class="nav-logo">ZOJA</a>
+        <div class="nav-links">
+            <a href="#home" data-lang="nav_home">Home</a>
+            <a href="#about" data-lang="nav_about">Rreth Nesh</a>
+            <a href="/html/koleksioni.html" data-lang="nav_features">Koleksioni</a>
+            <a href="#contact-us" data-lang="nav_contact">Kontakti</a>
+
+            <div class="controls">
+                <select id="language-selector" class="lang-select" aria-label="Gjuha">
+                    <option value="sq">🇦🇱 SQ</option>
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="sr">🇷🇸 SR</option>
+                </select>
+                <button id="theme-toggle" class="theme-btn" title="Ndrysho Temën" aria-label="Ndrysho temën">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <header id="home" class="hero-section">
+            <div class="hero-glow" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <div class="logo-circle" aria-hidden="true">Z</div>
+                </div>
+
+                <h1 class="hero-title">ZOJA©</h1>
+                <p class="hero-slogan" data-lang="slogan">"For every woman, for every moment."</p>
+
+                <div class="hero-divider" aria-hidden="true"></div>
+
+                <p class="hero-description" data-lang="hero_desc">
+                    Zbuloni koleksionin tonë më të ri të veshjeve. Dizajne elegante dhe cilësi e lartë,
+                    të krijuara posaçërisht për çdo grua dhe për çdo moment të ditës suaj.
+                </p>
+
+                <a href="/html/koleksioni.html" class="btn-primary" data-lang="hero_btn">Shiko Koleksionin ✨</a>
+            </div>
+        </header>
+
+        <!-- Teksti lëvizës -->
+        <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>ELEGANCE</span><span>✦</span><span>STYLE</span><span>✦</span><span>FEMININITY</span><span>✦</span><span>ZOJA</span><span>✦</span><span>ELEGANCE</span><span>✦</span><span>STYLE</span><span>✦</span><span>FEMININITY</span><span>✦</span><span>ZOJA</span><span>✦</span></div></div>
+
+        <!-- Rreth Nesh -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop"
+                         alt="ZOJA Boutique" loading="lazy">
+                    <div class="about-badge" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="badge-circle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#badge-circle">ZOJA • BOUTIQUE • ZOJA • BOUTIQUE •</textPath></text></svg><b>Z</b></div>
+                </div>
+                <div class="about-text">
+                    <h2 data-lang="about_title">Rreth Nesh</h2>
+                    <p data-lang="about_desc1">
+                        Mirësevini në ZOJA. Ne besojmë se moda nuk është thjesht veshje, por një mënyrë për t'u shprehur.
+                        Çdo artikull në butikun tonë është zgjedhur me kujdes për t'u siguruar që ju të ndiheni të sigurta,
+                        elegante dhe unike.
+                    </p>
+                    <p data-lang="about_desc2">
+                        Ne vazhdojmë të sjellim trendet më të fundit direkt në duart tuaja.
+                    </p>
+                    <a href="https://www.instagram.com/zojashopcom" target="_blank" rel="noopener noreferrer"
+                       class="btn-secondary" data-lang="about_btn">Na Ndiqni në Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pse ZOJA -->
+        <section id="features" class="features-section">
+            <h2 class="section-title" data-lang="features_title">Pse ZOJA?</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="icon" aria-hidden="true">✨</div>
+                    <h3 data-lang="feat1_title">Cilësi Premium</h3>
+                    <p data-lang="feat1_desc">Materiale të zgjedhura me kujdes për rehati maksimale.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="icon" aria-hidden="true">💎</div>
+                    <h3 data-lang="feat3_title">Dizajn Unik</h3>
+                    <p data-lang="feat3_desc">Modele që nuk i gjeni kudo, për të dalluar stilin tuaj.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Të zgjedhurat e sezonit -->
+        <section id="picks" class="picks-section">
+            <h2 class="section-title" data-lang="picks_title">Të Zgjedhurat e Sezonit</h2>
+            <p class="section-sub" data-lang="picks_sub">Pjesët më të dashura nga koleksioni i vjeshtës.</p>
+            <div class="picks-grid">
+                <a href="/html/koleksioni.html" class="pick"><img src="/assets/img/8.jpg" alt="ZOJA 8" loading="lazy"><span class="pick-cta" data-lang="picks_view">Shiko</span></a>
+                <a href="/html/koleksioni.html" class="pick"><img src="/assets/img/16.jpg" alt="ZOJA 16" loading="lazy"><span class="pick-cta" data-lang="picks_view">Shiko</span></a>
+                <a href="/html/koleksioni.html" class="pick"><img src="/assets/img/11.jpg" alt="ZOJA 11" loading="lazy"><span class="pick-cta" data-lang="picks_view">Shiko</span></a>
+                <a href="/html/koleksioni.html" class="pick"><img src="/assets/img/32.jpg" alt="ZOJA 32" loading="lazy"><span class="pick-cta" data-lang="picks_view">Shiko</span></a>
+            </div>
+            <a href="/html/koleksioni.html" class="btn-secondary" data-lang="picks_btn">Shiko të gjitha</a>
+        </section>
+
+        <!-- Citati -->
+        <section class="quote-section">
+            <blockquote>
+                <p data-lang="quote_text">Për gratë që e dinë se stili nuk është vetëm ajo që veshin, por mënyra si ndihen.</p>
+                <cite data-lang="quote_sub">Zbuloni çastin tuaj ZOJA.</cite>
+            </blockquote>
+        </section>
+
+        <!-- Si të porosisni -->
+        <section class="steps-section">
+            <h2 class="section-title" data-lang="steps_title">Si të Porosisni</h2>
+            <div class="steps-grid">
+                <article class="step"><span class="step-num">01</span><h3 data-lang="step1_title">Zgjidhni Modelin</h3><p data-lang="step1_desc">Shfletoni koleksionin dhe zgjidhni pjesën që ju pëlqen.</p></article>
+                <article class="step"><span class="step-num">02</span><h3 data-lang="step2_title">Na Shkruani në Instagram</h3><p data-lang="step2_desc">Klikoni "Porosit në Instagram", mesazhi kopjohet vetë, ju vetëm e ngjitni.</p></article>
+                <article class="step"><span class="step-num">03</span><h3 data-lang="step3_title">Pranoni Porosinë</h3><p data-lang="step3_desc">Konfirmojmë detajet dhe ju dërgojmë porosinë.</p></article>
+            </div>
+        </section>
+
+        <!-- Ftesë për Instagram -->
+        <section class="cta-section">
+            <div class="cta-box">
+                <h2 data-lang="cta_title">Ndiqni ZOJA në Instagram</h2>
+                <p data-lang="cta_desc">Modele të reja, ide stili dhe ofertat e sezonit, gjithçka në një vend.</p>
+                <a href="https://www.instagram.com/zojashopcom" target="_blank" rel="noopener noreferrer" class="btn-light" data-lang="about_btn">Na Ndiqni në Instagram</a>
+            </div>
+        </section>
+
+        <!-- Kontakti & Harta -->
+        <section id="contact-us" class="contact-section">
+            <h2 class="section-title" data-lang="contact_title">Kontakti</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p class="contact-intro" data-lang="contact_desc">Na vizitoni në butikun tonë ose na shkruani në Instagram. Do të jemi të lumtur t'ju shërbejmë.</p>
+
+                    <div class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">📍</span>
+                        <div>
+                            <h4 data-lang="contact_address">Adresa</h4>
+                            <p>Karađorđa Petrovića 107A<br>17520 Bujanovac, Serbia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon" aria-hidden="true">📸</span>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p><a href="https://www.instagram.com/zojashopcom" target="_blank" rel="noopener noreferrer">@zojashopcom</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Kara%C4%91or%C4%91a%20Petrovi%C4%87a%20107A%2C%2017520%20Bujanovac%2C%20Serbia"
+                           target="_blank" rel="noopener noreferrer" class="btn-primary" data-lang="contact_btn">Merr Drejtimet</a>
+                        <a href="https://maps.apple.com/directions?destination=Kara%C4%91or%C4%91a%20Petrovi%C4%87a%20107A%2C%20Kara%C4%91or%C4%91a%20Petrovi%C4%87a%20107A%2C%2017520%20%D0%91%D1%83%D1%98%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%2C%20Serbia&mode=driving"
+                           target="_blank" rel="noopener noreferrer" class="btn-secondary">Apple Maps</a>
+                    </div>
+                </div>
+
+                <div class="map-frame">
+                    <iframe
+                        title="ZOJA - Lokacioni"
+                        src="https://www.google.com/maps?q=Kara%C4%91or%C4%91a%20Petrovi%C4%87a%20107A%2C%2017520%20Bujanovac%2C%20Serbia&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>ZOJA©</h3>
+                <p data-lang="slogan">"For every woman, for every moment."</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/zojashopcom" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://maps.apple/p/1_dZhbWmx-EhKX" target="_blank" rel="noopener noreferrer" data-lang="footer_loc">Lokacioni</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-lang="footer_rights">&copy; 2026 ZOJA. Të gjitha të drejtat e rezervuara.</p>
+        </div>
+    </footer>
+
+    <!-- JS për përkthimet dhe temën -->
+    <script src="/js/script.js"></script>
+    <script src="/js/welcome.js"></script>
+</body>
+</html>

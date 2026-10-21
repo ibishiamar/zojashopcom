@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOJA - Koleksioni</title>
+    <!-- Fontet dhe Ikonat -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="shortcut icon" href="/assets/logo/logo.jpg" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/koleksioni.css">
+</head>
+<body>
+
+    <!-- Navigimi (Navbar) -->
+    <nav class="navbar">
+        <a href="welcome.html" class="nav-logo">ZOJA</a>
+        <div class="nav-links">
+            <a href="welcome.html" data-lang="nav_home">Home</a>
+            <a href="koleksioni.html" class="active" data-lang="nav_features">Koleksioni</a>
+            
+            <div class="controls">
+                <select id="language-selector" class="lang-select">
+                    <option value="sq">🇦🇱 SQ</option>
+                    <option value="en">🇬🇧 EN</option>
+                    <option value="sr">🇷🇸 SR</option>
+                </select>
+                <button id="theme-toggle" class="theme-btn" title="Ndrysho Temën">🌙</button>
+            </div>
+
+            <a href="https://www.instagram.com/zojashopcom/" target="_blank" class="insta-nav-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section për Koleksionin -->
+    <header class="hero-collection">
+        <div class="hero-content">
+            <span class="hero-tag" data-lang="hero_tag">NEW SEASON COLLECTION</span>
+            <h1 class="hero-title" data-lang="hero_title">Zbulo stilin tënd</h1>
+            <p class="hero-desc" data-lang="hero_desc">Elegancë në çdo detaj. Zgjidh pjesët që e bëjnë stilin tënd unik.</p>
+            <a href="#shop-section" class="btn-primary" data-lang="hero_btn">Eksploro koleksionin</a>
+        </div>
+    </header>
+
+    <!-- Seksioni i Dyqanit -->
+    <main class="shop-section" id="shop-section">
+        
+        <!-- Kontrollet: Filtra, Kërkimi, Renditja -->
+        <div class="shop-controls">
+            <div class="categories" id="category-filters">
+                <!-- Gjenerohen nga JS -->
+            </div>
+
+            <div class="search-sort">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Kërko produkt...">
+                </div>
+                <select id="sort-select" class="sort-select">
+                    <option value="newest">Më të rejat</option>
+                    <option value="price-asc">Çmimi: Nga më i ulëti</option>
+                    <option value="price-desc">Çmimi: Nga më i larti</option>
+                    <option value="name-az">Emri: A–Z</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="results-info">
+            <p id="results-count">Shfaqen 0 produkte</p>
+        </div>
+
+        <div class="masonry-grid" id="products-container">
+            <!-- Produktet gjenerohen nga JS -->
+        </div>
+
+        <div id="no-results" class="no-results hidden">
+            <i class="fas fa-box-open"></i>
+            <p data-lang="no_results">Nuk u gjet asnjë produkt që përputhet me kërkimin tuaj.</p>
+        </div>
+    </main>
+
+    <!-- Modali i Produktit -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Product Image">
+                </div>
+                <div class="modal-info">
+                    <span id="modal-badge" class="badge hidden"></span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-price" class="price"></p>
+                    <p id="modal-desc" class="desc"></p>
+                    
+                    <div id="modal-sizes-container" class="modal-options hidden">
+                        <h4 data-lang="modal_sizes">Madhësitë:</h4>
+                        <div id="modal-sizes" class="options-list"></div>
+                    </div>
+                    
+                    <div id="modal-colors-container" class="modal-options hidden">
+                        <h4 data-lang="modal_colors">Ngjyrat:</h4>
+                        <div id="modal-colors" class="options-list"></div>
+                    </div>
+
+                    <a href="#" target="_blank" id="modal-order-btn" class="btn-order-insta modal-btn">
+                        <i class="fab fa-instagram"></i> <span data-lang="btn_order">Porosit në Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>ZOJA©</h3>
+                <p data-lang="slogan">"For every woman, for every moment."</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/zojashopcom" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://maps.apple/p/1_dZhbWmx-EhKX" target="_blank" rel="noopener noreferrer" data-lang="footer_loc">Lokacioni</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-lang="footer_rights">&copy; © 2026 ZOJA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/koleksioni.js"></script>
+</body>
+</html>
